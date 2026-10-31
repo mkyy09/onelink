@@ -29,7 +29,7 @@ export const responseValidation = z.union([
       id: z.string(),
       ttl: z.number().optional(),
       reads: z.number().optional(),
-      expiresAt: z.string(),
+      expiresAt: z.string().optional(),
       url: z.string().url(),
     }),
   }),
