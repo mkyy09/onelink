@@ -4,6 +4,6 @@ import { Testimonials } from "./components/testimony";
 
 export default function Home() {
   return (
-    window.location.replace("/share");
+    window.location.replace("/share"),
   );
 }
