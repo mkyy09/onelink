@@ -3,17 +3,10 @@ import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const navigation = [
-  {
-    name: "Share",
-    href: "/",
-  },
-  {
-    name: "Unseal",
-    href: "/unseal",
-  },
-
-] satisfies { name: string; href: string; external?: boolean }[];
+const navigation: { name: string; href: string; external?: boolean }[] = [
+  { name: "Share", href: "/" },
+  { name: "Unseal", href: "/unseal" },
+];
 
 export const Header: React.FC = () => {
   const pathname = usePathname();
